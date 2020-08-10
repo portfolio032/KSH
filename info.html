@@ -1,0 +1,148 @@
+<!DOTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfoilo</title>
+        <link rel="stylesheet" href="INFO/CSS/style.css">
+        
+    </head>
+
+    <body>
+    <div id="wrap">
+        
+        <header id="header" class="clearfix">
+        <h1><a href="index.html"><img src="images/logo.jpg" alt="logo"></a></h1>
+        <div class="nav">
+            <ul class="clearfix">
+                <li><a href="#">About Me</a>
+                    <ul class="submenu">
+                        
+                        <li><a href="index.html">Info</a></li>
+                        <li><a href="#">My Skill</a></li>
+                        <li><a href="#">Contect</a></li>
+                    </ul>
+                 </li> 
+          <!----메뉴1---->      
+                <li><a href="#">Design</a>
+                    <ul class="submenu">
+                        
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Graphic</a></li>
+                        <li><a href="#">UX/UI</a></li>
+                        <li><a href="ext.html">Advertising</a></li>
+                    </ul>
+                 </li>
+            <!----메뉴2----> 
+                <li><a href="#">Video</a>
+                    <ul class="submenu">
+                        
+                        <li><a href="#">Graphic</a></li>
+                        <li><a href="#">Advertising</a></li>
+                    </ul>
+                 </li>
+            <!----메뉴3---->      
+                <li><a href="#">Maketing</a>
+                   <ul class="submenu">
+                        
+                        <li><a href="https://www.instagram.com/pixel_confirm/?hl=ko">Instagram</a></li>
+                       <li><a href="https://www.youtube.com/channel/UCmc8wRv5NoXBxO4L2DXjcpw?view_as=subscriber">Youtube</a></li>
+                    </ul>
+                 </li>
+                
+            <!----메뉴4---->    
+            
+            
+            </ul>
+            </div>
+             <!----메뉴 끝--->
+        </header>
+        
+        <!-- 해더 -->
+        
+
+        <!-- 이미지슬라이드 -->
+        
+      
+          <!-- 명언 -->
+        
+        
+        
+        
+        
+              
+    <section id="info" class="clearfix">
+        <div class="profil">
+            <div class="moto"><img src="INFO/images/03%20copy.jpg">
+            </div>
+            
+            <div class="po"><img src="INFO/images/profil.jpg">
+            </div>
+        
+            
+            <div class="map"><h5>지도 넣을곳</h5>
+            </div>
+         </div>
+        
+        
+   
+        </section>
+        <!-- 콘텐츠123 -->
+        
+        
+        <!-- 콘텐츠456 -->
+        
+        <footer id="footer" class="clearfix">
+            <h2><img src="images/logo2.jpg" alt="ckkol"></h2>
+            <div class="foot1">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">사업자 정보확인</a></li>
+                </ul>   
+                <address>
+                    한강미디어고(주) 대표자:김성현<br>
+                    주소: 인천 영종 하늘별빛로 66 전화번호 : 010-6321-4113<br>
+                    디자인저작권판매업 개인정보취급방침
+                
+                </address>
+            </div>
+        </footer >
+        
+        
+        <!-- 풋터 -->
+        
+        </div>
+        
+              <!-- 전체끝 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+        //네비게이션
+            $(".nav > ul > li").mouseover(function(){
+                $(this).find(".submenu").stop() .slideDown(200);});
+            
+            $(".nav > ul > li").mouseout(function(){
+                $(this).find(".submenu").stop() .slideUp(200);});
+            
+        
+           var currentIndex = 0;
+        
+        setInterval(function(){
+            if(currentIndex < 2){
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            var slidePosition = currentIndex * (-1000)+"px";
+            $(".slideList").animate({ left:slidePosition },400);
+        },3000);
+            
+        </script>
+        
+    </body>
+
+
+
+
+
+</html>
