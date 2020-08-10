@@ -1,0 +1,189 @@
+<!DOTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfoilo</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        
+    </head>
+
+    <body>
+    <div id="wrap">
+        
+        <header id="header" class="clearfix">
+        <h1><a href="index.html"><img src="images/logo.jpg" alt="logo"></a></h1>
+        <div class="nav">
+            <ul class="clearfix">
+                <li><a href="#">About Me</a>
+                    <ul class="submenu">
+                        <li><a href="info.html">Info</a></li>
+                        <li><a href="#">My Skill</a></li>
+                        <li><a href="#">Contect</a></li>
+                    </ul>
+                 </li> 
+          <!----메뉴1---->      
+                <li><a href="#">Design</a>
+                    <ul class="submenu">
+                        
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Graphic</a></li>
+                        <li><a href="#">UX/UI</a></li>
+                        <li><a href="ext.html">Advertising</a></li>
+                    </ul>
+                 </li>
+            <!----메뉴2----> 
+                <li><a href="#">Video</a>
+                    <ul class="submenu">
+                        
+                        <li><a href="#">Graphic</a></li>
+                        <li><a href="#">Advertising</a></li>
+                    </ul>
+                 </li>
+            <!----메뉴3---->      
+                <li><a href="#">Maketing</a>
+                   <ul class="submenu">
+                        
+                        <li><a href="https://www.instagram.com/pixel_confirm/?hl=ko">Instagram</a></li>
+                       <li><a href="https://www.youtube.com/channel/UCmc8wRv5NoXBxO4L2DXjcpw?view_as=subscriber">Youtube</a></li>
+                    </ul>
+                 </li>
+                
+            <!----메뉴4---->    
+            
+            
+            </ul>
+            </div>
+             <!----메뉴 끝--->
+        </header>
+        
+        <!-- 해더 -->
+        
+        <section id="baner">
+            <div class="slidelist">
+                <div class="slideimg">
+                    <img src="images/banner01.jpg" alt="앨범아트">
+                     
+                </div>
+                
+                <div class="slideimg">
+                    <img src="images/banner02.jpg" alt="베너2">
+                     
+                </div>
+                
+                <div class="slideimg">
+                    <img src="images/banner03.jpg" alt="배너3">
+                     
+                </div>
+            
+            </div>
+        
+        </section>
+        <!-- 이미지슬라이드 -->
+        
+          <section id="baner2" class="clearfix">
+        <div class="banner2"><img src="images/content01.jpg" alt="명언"></div>
+        <div class="banner3"><img src="images/content02.jpg" alt="좌우명"></div>
+                 </section>
+          <!-- 명언 -->
+        
+        
+        
+        
+        
+              
+    <section id="mockup" class="clearfix">
+        <div class="cont1">
+        <div class="best clearix">
+        <figure>
+            <img src="images/01.jpg" alt="어복쟁반">
+            <figcaption>펭귄 카드뉴스</figcaption>
+        </figure>
+            <figure>
+            <img src="images/02.jpg" alt="어복쟁반">
+            <figcaption>모나미</figcaption>
+        </figure>
+            <figure>
+            <img src="images/03.jpg" alt="어복쟁반">
+            <figcaption>앱 UI디자인</figcaption>
+        </figure>
+            </div>
+             <!-- 3개 -->
+            <div class="best clearix">
+        <figure>
+            <img src="images/04.jpg" alt="어복쟁반">
+            <figcaption>LUCID DREAM</figcaption>
+        </figure>
+            <figure>
+            <img src="images/05.jpg" alt="어복쟁반">
+            <figcaption>4계절 스노우볼</figcaption>
+        </figure>
+            <figure>
+            <img src="images/06.jpg" alt="어복쟁반">
+            <figcaption>유튜브 섬네일</figcaption>
+        </figure>
+            </div>
+            
+            
+             <!-- 3개 -->
+           </div> 
+        </section>
+        <!-- 콘텐츠123 -->
+        
+        
+        <!-- 콘텐츠456 -->
+        
+        <footer id="footer" class="clearfix">
+            <h2><img src="images/logo2.jpg" alt="ckkol"></h2>
+            <div class="foot1">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">사업자 정보확인</a></li>
+                </ul>   
+                <address>
+                    한강미디어고(주) 대표자:김성현<br>
+                    주소: 인천 영종 하늘별빛로 66 전화번호 : 010-6321-4113<br>
+                    디자인저작권판매업 개인정보취급방침
+                
+                </address>
+            </div>
+        </footer >
+        
+        
+        <!-- 풋터 -->
+        
+        </div>
+        
+              <!-- 전체끝 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+        //네비게이션
+            $(".nav > ul > li").mouseover(function(){
+                $(this).find(".submenu").stop() .slideDown(200);});
+            
+            $(".nav > ul > li").mouseout(function(){
+                $(this).find(".submenu").stop() .slideUp(200);});
+            
+        
+           var currentIndex = 0;
+        
+        setInterval(function(){
+            if(currentIndex < 2){
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            var slidePosition = currentIndex * (-1000)+"px";
+            $(".slideList").animate({ left:slidePosition },400);
+        },3000);
+            
+        </script>
+        
+    </body>
+
+
+
+
+
+</html>
